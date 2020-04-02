@@ -1,0 +1,7 @@
+<div class="btn-group btn-group-toggle">
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="file" ngbButton (change)="handleFileInput($event.target.files)"> Choose File
+  </label>
+</div>
+
+<p *ngIf="progress"><ngb-progressbar [showValue]="true" type="danger" [value]="progress" [striped]="true"></ngb-progressbar></p>

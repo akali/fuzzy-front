@@ -1,0 +1,18 @@
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Name</th>
+    <th scope="col">Numeric Columns</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let table of tables; index as i">
+    <th scope="row">{{ i + 1 }}</th>
+    <td>{{ table?.name }}</td>
+    <td>
+      <span *ngFor="let column of table?.numeric_columns">{{ column.numeric_column }}, </span>
+    </td>
+  </tr>
+  </tbody>
+</table>

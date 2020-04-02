@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "fuzzy-front"
+    }
+  },
+  "defaultProject": "fuzzy-front",
+  "cli": {
+    "analytics": "ca2cee95-2977-4ac6-bd8f-20001138b5a2"
+  }
 }
